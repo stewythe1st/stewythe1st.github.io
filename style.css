@@ -1,0 +1,120 @@
+body {
+    background-color: #dee1e8;
+}
+
+.custom-color{
+    background-color: #5c86f9 !important;
+}
+
+.icon{
+    font-size: 34px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.header-card{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.header-profile-image-container{
+    margin-top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.header-profile-image{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+.header-title-text {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.header-subtitle-text {
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    color: grey;
+}
+
+.header-text {
+    margin: 0 auto;
+    width: 85%;
+    line-height: 22px;
+    text-align: center;
+}
+
+.header-buttons {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.header-buttons > a {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #5c86f9 !important;
+}
+
+.section-title-text {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;   
+}
+
+.exp-logo{
+    width: 180px;
+}
+
+.exp-dates {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 5px;
+    color: #4286f4;
+}
+
+
+.exp-grid{
+    width: 75%;    
+}
+
+.exp-text{
+    padding-top: 0px;
+}
+
+.skill{
+    width: 23%;
+    background-color: white;
+}
+
+.honor{
+    background-color: white;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 15px;
+}
+
+.act-img-container {
+    width: 200px;
+}
+
+.act-img{
+    object-fit: contain;
+    width: 100px;
+    max-height: 50px
+}
