@@ -118,3 +118,15 @@ body {
     width: 100px;
     max-height: 50px
 }
+
+.section-edu {
+	
+}
+
+.section-edu img{
+	width: 125px;
+}
+
+.section-edu .header-subtitle-text{
+	padding-top: 12px;
+}
