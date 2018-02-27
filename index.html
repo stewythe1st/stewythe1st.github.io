@@ -1,80 +1,72 @@
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Stuart Miller Resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Stuart Miller</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-teal.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <!-- Always shows a header, even in smaller screens. -->
+
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row custom-color">
-      <!-- Title -->
-      <span class="mdl-layout-title">Stuart Miller</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">(816) 785-4105</a>
-        <a class="mdl-navigation__link" href="mailto:sm67c@mst.edu">sm67c@mst.edu</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Stuart Miller</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">(816) 785-4105</a>
+                <a class="mdl-navigation__link" href="mailto:sm67c@mst.edu">sm67c@mst.edu</a>
+            </nav>
+        </div>
+    </header>
+
     
 <main class="mdl-layout__content">
     <div class="page-content">
-      
-        <br><br><br>
         
-
-        
-        <div class="demo-card-wide mdl-card mdl-shadow--6dp header-card">
-            <div class="header-profile-image-container">
-                <img src="stuart.jpg" class="header-profile-image" />
+        <!--- Overview Section --->
+        <div class="section-overview mdl-card mdl-shadow--6dp">
+            <div class="profile-image">
+                <img src="./img/stuart.jpg">
             </div>
             <div class="mdl-card__title">
-                <div class="mdl-card__title-text header-title-text">
+                <div class="mdl-card__title-text title">
                     Stuart Miller
-                    <div class="mdl-card__title-text header-subtitle-text">
+                    <div class="mdl-card__title-text subtitle">
                         Computer Engineering Master's Student
                     </div>
                 </div>
             </div>
-            <div class="mdl-card__supporting-text header-text">
+            <div class="mdl-card__supporting-text">
                 I'm a computer engineering graduate student, with coursework in both embedded systems and general programming, seeking an internship or co-op in the area of computer or software engineering.
             </div>
-            <div class="mdl-card__actions mdl-card--border header-buttons">
+            <div class="mdl-card__actions mdl-card--border">
 				<a href="mailto:sm67c@mst.edu" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Email</a>
+                <a href="https://github.com/stewythe1st" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Github</a>
                 <a href="http://web.mst.edu/~sm67c/resume.pdf" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Printable Resume</a>
-				<a href="https://github.com/stewythe1st" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Github</a>
             </div>
         </div>
-		
-		<div class="section-title-text"><i class="material-icons icon">school</i>Education</div>
-		
-		<div class="section-edu demo-card-wide mdl-card mdl-shadow--6dp header-card">
+        
+        
+		<!--- Education Section --->
+		<div class="section-title"><i class="material-icons">school</i>Education</div>
+		<div class="section-edu mdl-card mdl-shadow--6dp">
             <div class="mdl-card__title">
-				<img class="edu-logo" src="https://campus.mst.edu/emctest/brand_resources/logos/departments/electrical_and_computer_engineering/electrical_and_computer_engineering_stacked_logo_stacked.png" />
-                <div class="mdl-card__title-text header-title-text">
+				<img src="./img/mstece.png" />
+                <div class="mdl-card__title-text title">
                     Missouri University of Science & Technology
-                    <div class="mdl-card__title-text header-subtitle-text">
+                    <div class="mdl-card__title-text subtitle">
 						Master's of Computer Engineering
-						<div class="mdl-card__title-text exp-dates">
+						<div class="mdl-card__title-text subtitle-blue">
 							Anticipated Spring 2019
 						</div>
                         Bachelor's of Computer Engineering
-						<div class="mdl-card__title-text exp-dates">
+						<div class="mdl-card__title-text subtitle-blue">
 							Spring 2017
 						</div>
                     </div>
@@ -82,146 +74,156 @@
             </div>
         </div>
 		</div>
-            
-        <div class="section-title-text"><i class="material-icons icon">laptop_chromebook</i>Work Experience</div>
         
-        <div class="demo-card-wide mdl-card mdl-shadow--6dp header-card">
+    
+        <!--- Work Experience Section --->
+        <div class="section-title"><i class="material-icons">laptop_chromebook</i>Work Experience</div>
+        <div class="section-exp mdl-card mdl-shadow--6dp">
             <div class="mdl-card__title">
-                <div class="mdl-card__title-text header-title-text">
+                <div class="mdl-card__title-text title">
                     Missouri S&T IT Department
-                    <div class="mdl-card__title-text header-subtitle-text">
+                    <div class="mdl-card__title-text subtitle">
                         IT Help Desk Senior Student Technician
-                        <div class="mdl-card__title-text exp-dates">
+                        <div class="mdl-card__title-text subtitle-blue">
                             Oct. 2014 - Present
                         </div>
                     </div>
                 </div>
-                <img class="exp-logo" src="http://brand.mst.edu/media/universityadvancement/brand/logos/MissouriS&T_Horizontal_DigitalMinerGreen.png" />
+                <img src="./img/mst.png" />
             </div>
-            <div class="mdl-card__supporting-text exp-text">
-				Investigate computer related problems, determine the cause, and implement a solution or coordinate with the appropriate department to resolve the issue <br>
-				Assist in training new employees and implementing new policies <br>
-				Serve as a point of escalation for demanding issues <br>
-                Operate and manage the 3D printers available to faculty and students <br>
-                Repair laptops as a Dell certified technician <br>
-            </div>
+            <ul class="mdl-card__supporting-text">
+				<li>Investigate computer related problems, determine the cause, and implement a solution or coordinate with the appropriate department to resolve the issue</li>
+				<li>Assist in training new employees and implementing new policies</li>
+				<li>Serve as a point of escalation for demanding issues</li>
+                <li>Operate and manage the 3D printers available to faculty and students</li>
+                <li>Repair laptops as a Dell certified technician</li>
+            </ul>
         </div>
         
-        <br><br>
-        
-        <div class="demo-card-wide mdl-card mdl-shadow--6dp header-card">
+        <div class="section-exp mdl-card mdl-shadow--6dp">
             <div class="mdl-card__title">
-                <div class="mdl-card__title-text header-title-text">
+                <div class="mdl-card__title-text title">
                     Garmin International
-                    <div class="mdl-card__title-text header-subtitle-text">
+                    <div class="mdl-card__title-text subtitle">
                         Software Engineering Intern - Aviation
-                        <div class="mdl-card__title-text exp-dates">
+                        <div class="mdl-card__title-text subtitle-blue">
                             Oct. 2015 - Aug. 2016
                         </div>
                     </div>
                 </div>
-                <img class="exp-logo" src="https://static.garmincdn.com/com.garmin/ui/images/logo/garmin_logo_on_w.png" />
+                <img src="./img/garmin.png" />
             </div>
-            <div class="mdl-card__supporting-text exp-text">
-               Developed and tested software used on aviation displays and user interfaces.<br>
-            Worked closely within the constraints of hardware to write effective embedded C code.<br>
-            Completed a refactor of part of Garmin’s module testing environment to allow for enhanced software verification at the system level<br>
-            </div>
+            <ul class="mdl-card__supporting-text">
+                <li>Developed and tested software used on aviation displays and user interfaces</li>
+                <li>Worked closely within the constraints of hardware to write effective embedded C code</li>
+                <li>Completed a refactor of part of Garmin’s module testing environment to allow for enhanced software verification at the system level</li>
+            </ul>
         </div>
         
-        <br><br>
-        
-        <div class="demo-card-wide mdl-card mdl-shadow--6dp header-card">
+        <div class="section-exp mdl-card mdl-shadow--6dp">
             <div class="mdl-card__title">
-                <div class="mdl-card__title-text header-title-text">
+                <div class="mdl-card__title-text title">
                     The Boeing Company
-                    <div class="mdl-card__title-text header-subtitle-text">
+                    <div class="mdl-card__title-text subtitle">
                         IT Intern - Business Systems Data Warehouse & Analytics
-                        <div class="mdl-card__title-text exp-dates">
+                        <div class="mdl-card__title-text subtitle-blue">
                             May 2015 - Aug. 2015
                         </div>
                     </div>
                 </div>
-                <img class="exp-logo" src="http://www.boeing.com/assets/images/logo.png" />
+                <img src="./img/boeing.png" />
             </div>
-            <div class="mdl-card__supporting-text exp-text">
-                Worked closely with offshore resources to manage the transition of finance web portal code from Adobe Coldfusion to ASP .NET <br>
-                Provided analysis on existing PL/SQL Queries and database structure <br>
-                Used Tableau analysis software to create data visualizations <br>
-
-            </div>
+            <ul class="mdl-card__supporting-text">
+                <li>Worked closely with offshore resources to manage the transition of finance web portal code from Adobe Coldfusion to ASP .NET</li>
+                <li>Provided analysis on existing PL/SQL Queries and database structure</li>
+                <li>Used Tableau analysis software to create data visualizations</li>
+            </ul>
         </div>
         
-        <br><br>
         
-        <div class="section-title-text"><i class="material-icons icon">settings</i>Skills</div>
-        
-        <div class="mdl-grid exp-grid">
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
-                C/C++ Programming
+        <!--- Skills Section --->
+        <div class="section-title"><i class="material-icons">settings</i>Skills</div>        
+        <div class="section-skills mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                Embedded C Programming
             </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
-                Embedded Programming
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                C++ Programming
             </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                ARM Programming
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                MATLAB Scripting
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                Microcontroller Architectures
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                Digital Circuits
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                Network/Security Concepts
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                Artificial Intelligence
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                Linux Systems
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                Software Verification
+            </div></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
                 Git Version Control
             </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
-                Software Verfication
-            </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
                 JIRA Workflow
             </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
-                Databases/SQL
+            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                LATEX
             </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
-                LaTeX
-            </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
-                3D Printing/3D Modeling
-            </div></div>
-            <div class="mdl-cell mdl-cell--1-col mdl-shadow--6dp skill"><div class="mdl-card__supporting-text">
-                Computer/Laptop Repair
-            </div></div>
-            
-            
         </div>
         
-        <div class="section-title-text"><i class="material-icons icon">star</i>Honors</div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
+        
+        <!--- Honors Section --->
+        <div class="section-title"><i class="material-icons">star</i>Honors</div>
+        <div class="section-honors">
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
                 Missouri S&T Chancellor's Scholarship
             </div></div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
                 Missouri Higher Education Scholarship (Bright Flight)
             </div></div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
                 James C. Grimm Electrical & Computer Engineering Scholarship
             </div></div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
                 Dean's List
             </div></div>
-        
-        <div class="section-title-text"><i class="material-icons icon">mode_comment</i>Activities</div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
-                <span class="act-img-container"><a href="http://alp.mst.edu/music/"><img class="act-img" src="http://brand.mst.edu/media/universityadvancement/communications/images/logos/logo/Logo_356.jpg"></a></span>
-                <span><b>Missouri S&T Symphony Orchestra & Wind Symphony</b>, Principal Oboist</span>
-            </div></div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
-                <span class="act-img-container"><a href="https://www.kkpsi.org/"><img class="act-img" src="http://www.kkpsiomicron.com/uploads/6/4/6/5/6465559/1381507695.jpg"></a></span>
-                <span><b>Kappa Kappa Psi</b>, Honorary Band Fraternity, Music Committee Chair</span>
-            </div></div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
-                <span class="act-img-container"><a href="https://www.tbp.org/"><img class="act-img" src="http://tbp.mccormick.northwestern.edu/img/TBP_logo.gif"></a></span>
-                <span><b>Tau Beta Pi</b>, Engineering Honor Society, Member</span>
-            </div></div>
-            <div class="mdl-shadow--6dp honor"><div class="mdl-card__supporting-text">
-                <span class="act-img-container"><a href="http://www.heartlandcamps.org/"><img class="act-img" src="https://newhopeknoxville.files.wordpress.com/2015/07/presbyterian-cross.gif"></a></span>
-                <span><b>Heartland Camps</b>, Volunteer Camp Counselor</span>
-            </div></div>
+        </div>
         
         
-    <br><br><br><br><br><br><br><br><br>    
+        <!--- Activities Section --->
+        <div class="section-title"><i class="material-icons">mode_comment</i>Activities</div>
+        <div class="section-activities">
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                <img href="http://alp.mst.edu/music/" class="act-img" src="./img/mstsmall.png">
+                <div><b>Missouri S&T Symphony Orchestra & Wind Symphony</b>, Principal Oboist</div>
+            </div></div>
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                <img href="https://www.kkpsi.org/" class="act-img" src="./img/kky.png">
+                <div><b>Kappa Kappa Psi</b>, Honorary Band Fraternity, Music Committee Chair</div>
+            </div></div>
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                <img href="https://www.tbp.org/" class="act-img" src="./img/tbp.gif">
+                <div><b>Tau Beta Pi</b>, Engineering Honor Society, Member</div>
+            </div></div>
+            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
+                <img href="http://www.heartlandcamps.org/" class="act-img" src="./img/cross.jpg">
+                <div><b>Heartland Camps</b>, Volunteer Camp Counselor</div>
+            </div>
+        </div>
         
     </div>
 </main>
