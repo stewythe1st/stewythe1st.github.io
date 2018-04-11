@@ -202,3 +202,55 @@ Activities Section
         width: 90%;
     }
 }
+
+
+/**********************************
+Coursework Page
+***********************************/
+.expansion-header {
+    margin-top: 20px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;   
+}
+.expansion-panel {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid rgb(0,0,0,.87);
+    background-color: #fff;
+}
+.expansion-panel:hover {
+    background-color: #d7dae0;
+}
+.expansion-panel span:nth-child(1) {
+    width: 30%;
+    margin: 10px;
+}
+.expansion-panel span:nth-child(2) {
+    width: calc(70% - 45px);
+    margin: 10px;
+}
+.expansion-panel span:nth-child(3) {
+    text-align: center;
+    width: 45px;
+}
+.expansion-panel i {
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.expansion-content {
+    width: 90%;
+    height: 0px;
+    display: none;
+    margin: 0 auto;
+    border: 1px solid rgb(0,0,0,.87);
+    transition-duration: 0.5s;
+}
+.expansion-content .mdl-spinner {
+    position: absolute;
+    margin-left: calc(45% - 14px);
+    margin-top: 50px;
+    z-index: -1;
+}
