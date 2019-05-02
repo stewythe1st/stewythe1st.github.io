@@ -131,9 +131,12 @@ Work Experience Section
 }
 .section-exp > .mdl-card__supporting-text {
     padding-top: 0px;
+	font-size: 
 }
 .section-exp li {
     margin-left: 20px;
+	font-size: medium;
+	line-height: 1.3;
 }
 
 
