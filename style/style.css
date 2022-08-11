@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    transition: 1s all ease;
+}
+
 .logo {
     position: relative;
 }
@@ -11,11 +15,21 @@ a {
     color: black;
 }
 
+.subtle-emphasis {
+    font-weight: bold;
+}
+
 .logo>img {
-    top: -6rem;
+    top: -2rem;
     position: absolute;
     opacity: 0.10;
-    max-width: 100%;
+    max-width: 14rem;
+    max-height: 20rem;
+    transition: 1s all ease;
+    opacity: 0.0;
+}
+li.active .logo>img {
+    opacity: 0.1
 }
 
 @media screen and (min-width: 720px) {
@@ -113,6 +127,14 @@ ul.flow-points li {
     position: relative;
     padding-top: 1rem;
     padding-bottom: 0.75rem;
+    opacity: 0.0
+}
+ul.flow-points li.active {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+    transition: 1s all ease;
+    opacity: 1.0
 }
 
 ul.flow-points li::marker {
@@ -130,6 +152,12 @@ ul.flow-points>li::before {
     border-radius: 50%;
     z-index: 3;
     border: 0.18rem solid rgb(0, 0, 0);
+    transition: 1s all ease;
+    transform: scale(0.4);
+}
+
+ul.flow-points>li.active::before {
+    transform: scale(1.0);
 }
 
 ul.flow-points>li:after {
@@ -138,20 +166,34 @@ ul.flow-points>li:after {
     content: "";
     position: absolute;
     z-index: 2;
-    top: 1rem;
+    top: 1.45rem;
     left: -1.45rem;
     background: rgb(0, 0, 0);
+    transition: 1s all ease;
+    transform: scaleY(0.0);
+    transform-origin: top;
+}
+
+ul.flow-points>li.active:after {
+    transform: scaleY(1.0);
 }
 
 ul.flow-points ul.flow-points>li:last-of-type:after {
     height: 0.2rem;
-    width: 3rem;
+    width: 2.65rem;
     content: "";
     position: absolute;
     z-index: 2;
     top: 1.5rem;
     left: -3.9rem;
     background: rgb(0, 0, 0);
+    transition: 1s all ease;
+    transform: scaleX(0.0);
+    transform-origin: right;
+}
+
+ul.flow-points ul.flow-points>li.active:last-of-type:after {
+    transform: scaleX(1.0);
 }
 
 ul.flow-points li ul.flow-points li:before {
