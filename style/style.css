@@ -1,0 +1,159 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    position: relative;
+}
+
+a {
+    color: black;
+}
+
+.logo>img {
+    top: -6rem;
+    position: absolute;
+    opacity: 0.10;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+    .row {
+        display: flex;
+    }
+
+    body {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        line-height: 1.50
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        line-height: 1.50
+    }
+}
+
+.column_20 {
+    flex: 20%;
+}
+
+.column_50 {
+    flex: 50%;
+}
+
+.column_70 {
+    flex: 70%;
+}
+
+.column_30 {
+    flex: 30%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.menu {
+    position: fixed
+}
+
+.exp>div {
+    align-items: center;
+}
+
+.exp_title {
+    font-weight: bold;
+}
+
+.exp_loc {}
+
+.exp_time {}
+
+
+.card {
+    width: 40%;
+    border: 0.2rem;
+    border-color: black;
+    color: aquamarine;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+ul.flow-points {
+    position: relative;
+}
+
+ul.flow-points li :not(ul.flow-points)>li {
+    position: relative;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+ul.flow-points :not(ul.flow-points)>li::marker {
+    content: revert;
+}
+
+ul.flow-points li {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+}
+
+ul.flow-points li::marker {
+    content: "";
+}
+
+ul.flow-points>li::before {
+    content: "";
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: -2rem;
+    top: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    z-index: 3;
+    border: 0.18rem solid rgb(0, 0, 0);
+}
+
+ul.flow-points>li:after {
+    width: 0.2rem;
+    height: calc(100%);
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 1rem;
+    left: -1.45rem;
+    background: rgb(0, 0, 0);
+}
+
+ul.flow-points ul.flow-points>li:last-of-type:after {
+    height: 0.2rem;
+    width: 3rem;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 1.5rem;
+    left: -3.9rem;
+    background: rgb(0, 0, 0);
+}
+
+ul.flow-points li ul.flow-points li:before {
+    background: rgb(255, 255, 255);
+}
