@@ -14,8 +14,9 @@
     <!-- FavIcon -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
-    
+
     <!-------------------------------------------------------------------------
       - Top Navigation
       ------------------------------------------------------------------------>
@@ -38,33 +39,38 @@
     <!-------------------------------------------------------------------------
       - About Me Section
       ------------------------------------------------------------------------>
-    <div>
-        <h2><a id="AboutMe">About Me</a></h2>
+    <div class="aboutme">
+
         <div class="row">
-            <div class="column_30">
+            <div class="column_50">
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYMp8GlxKXpDD_naZMRGaa5znZMd-4ydPonsUJMaYY5E0cj6Bba0DO1ViZORaKKEhBnJ8&usqp=CAU" />
             </div>
-            <p>I am an <span class="subtle-emphasis">embedded software engineer</span>. My main area of expertise
-                is working with close-to-hardware
-                C/C++ code. I also have experience working with Matlab/Simulink and Qt. In my work, I welcome the
-                challenges of <span class="subtle-emphasis">solving problems</span> and <span
-                    class="subtle-emphasis">architecting complex systems</span>.</p>
+            <div class="column_50">
+                <h3><a id="AboutMe">About Me</a></h3>
+                <p>
+                    I am an <span class="subtle-emphasis">embedded software engineer</span>.
+                    My main area of expertise is working with close-to-hardware <span class="subtle-emphasis">C/C++
+                        code</span>.
+                    I also have experience working with Matlab/Simulink and Qt.
+                    In my work, I welcome the challenges of <span class="subtle-emphasis">solving problems</span> and
+                    <span class="subtle-emphasis">architecting complex systems</span>.
+                </p>
+            </div>
         </div>
     </div>
 
     <!-------------------------------------------------------------------------
       - Work experience                                                  
       ------------------------------------------------------------------------>
-    <ul class="flow-points">
+    <ul class="flow-points experience">
         <h2><a id="Experience">Experience</a></h2>
         <li>
             <div class="row">
-                <div class="column_30">
+                <div class="column_30 background-image" style="background-image: url(img/vermeer.png);">
                     <div class="exp_title">Vermeer Corporation</div>
                     <div class="exp_loc">Pella, IA</div>
                     <div class="exp_time">May 2018 - Present</div>
-                    <div class="logo"><img src="https://www.vermeer.com/images/vermeer-footer-logo.svg" /></div>
                     <ul class="flow-points">
                         <li>Embedded Software Engineer II<br>May 2021 - Present</li>
                         <li>Embedded Software Engineer I<br>May 2019 - May 2021</li>
@@ -93,12 +99,10 @@
         </li>
         <li>
             <div class="row">
-                <div class="column_30">
+                <div class="column_30 background-image" style="background-image: url(img/garmin.png);">
                     <div class="exp_title">Garmin International</div>
                     <div class="exp_loc">Olathe, KS</div>
                     <div class="exp_time">October, 2015 - May, 2016</div>
-                    <div class="logo"><img src="https://logodix.com/logo/576564.jpg"
-                            style="transform: scale(50%); transform-origin: top; top: -5rem;" /></div>
                     <ul class="flow-points">
                         <li>Embedded Software Intern, Aviation</li>
                     </ul>
@@ -113,12 +117,10 @@
         </li>
         <li>
             <div class="row">
-                <div class="column" style="flex: 30%">
+                <div class="column_30 background-image" style="background-image: url(img/boeing.png);">
                     <div class="exp_title">The Boeing Company</div>
                     <div class="exp_loc">St. Louis, MO</div>
                     <div class="exp_time">May 2015 - August 2015</div>
-                    <div class="logo"><img src="https://logos-world.net/wp-content/uploads/2021/08/Boeing-Emblem.png" />
-                    </div>
                     <ul class="flow-points">
                         <li>IT Intern, Business Systems Data Warehouse & Analytics</li>
                     </ul>
@@ -133,23 +135,27 @@
     <!-------------------------------------------------------------------------
       - Education Section
       ------------------------------------------------------------------------>
-    <ul class="flow-points">
+    <div>
         <h2><a id="Education">Education</a></h2>
-        <li>
-            <div class="exp_title">Master's of Computer Engineering</div>
-            <div class="exp_loc">Missouri University of Science & Technology</div>
-            <div class="exp_loc">Rolla, MO</div>
-            <div class="exp_time">August 2017 - May 2019</div>
-            <div class="exp_desc">Emphasis in Embedded Systems</div>
-        </li>
-        <li>
-            <div class="exp_title">Bachelor's of Computer Engineering</div>
-            <div class="exp_loc">Missouri University of Science & Technology</div>
-            <div class="exp_loc">Rolla, MO</div>
-            <div class="exp_time">August 2013 - May 2017</div>
-            <div class="exp_desc">Minors in Mathematics & Computer Science</div>
-        </li>
-    </ul>
+        <div class="education">
+            <ul class="flow-points">
+                <li>
+                    <div class="exp_title">Master's of Computer Engineering</div>
+                    <div class="exp_loc">Missouri University of Science & Technology</div>
+                    <div class="exp_loc">Rolla, MO</div>
+                    <div class="exp_time">August 2017 - May 2019</div>
+                    <div class="exp_desc">Emphasis in Embedded Systems</div>
+                </li>
+                <li>
+                    <div class="exp_title">Bachelor's of Computer Engineering</div>
+                    <div class="exp_loc">Missouri University of Science & Technology</div>
+                    <div class="exp_loc">Rolla, MO</div>
+                    <div class="exp_time">August 2013 - May 2017</div>
+                    <div class="exp_desc">Minors in Mathematics & Computer Science</div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-------------------------------------------------------------------------
       - Experience Section
@@ -158,38 +164,34 @@
         <h2><a id="Skills">Skills</a></h2>
         <div class="skills">
             <div class="grid">
-                <div><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" />
+                <div><img src="img/git.png" />
                     <span>Git</span>
                 </div>
-                <div><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" />
+                <div><img src="img/c.png" />
                     <span>C / C++</span>
                 </div>
-                <div><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" />
+                <div><img src="img/matlab.png" />
                     <span>Matlab / Simulink</span>
                 </div>
-                <div><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/640px-Qt_logo_2016.svg.png" />
+                <div><img src="img/qt.png" />
                     <span>Qt</span>
                 </div>
-                <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/640px-Tux.svg.png" />
+                <div><img src="img/linux.png" />
                     <span>Linux / Embedded Linux</span>
                 </div>
-                <div><img src="https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg" />
+                <div><img src="img/github-actions.png" />
                     <span>CI / CD</span>
                 </div>
-                <div><img
-                        src="https://blogs.sap.com/wp-content/uploads/2019/10/282126_MultipleChecklist_R_purple.png" />
+                <div><img src="img/checklist.png" />
                     <span>Test-Driven Development</span>
                 </div>
-                <div><img src="https://www.computerhope.com/issues/pictures/duplicate-document.png" />
+                <div><img src="img/documents.png" />
                     <span>Software Requirements</span>
                 </div>
-                <div><img src="https://www.iso.org/obp/graphics/grs/ba12ca29-11ef-425a-99c5-ef66d0bb489a_200.png" />
+                <div><img src="img/iso-7000-network.png" />
                     <span>SAE J1939 CAN bus</span>
                 </div>
-                <div><img
-                        src="https://w7.pngwing.com/pngs/850/219/png-transparent-printed-circuit-board-electronic-circuit-electronics-circuit-board-photography-grass-wire.png" />
+                <div><img src="img/circuitboard.png" />
                     <span>Hardware Troubleshooting</span>
                 </div>
             </div>
@@ -200,15 +202,22 @@
       - Personal Life Section
       ------------------------------------------------------------------------>
     <div>
-        <h2><a id="Skills">Personal Life</a></h2>
-        <ul>
-            <li>I currently live in the lovely Dutch town of Pella, Iowa.</li>
-            <li>My hobbies include playing the oboe! I enjoy playing with community bands/orchestras whenever I can.
-            </li>
-            <li>I live with my 1½ year-old whippet-mix, Ada, who is full of energy. </li>
-            <li>In my free time, I like tinkering with home improvement and putting my programming skills to use with
-                home automation! My goal is to (securely) automate as much of my house as I can.</li>
-        </ul>
+        <h2><a id="PersonalLife">Personal Life</a></h2>
+        <div class="personallife">
+            <div class="personallife-card background-image" style="background-image: url(img/pella.png);">
+                I currently live in the lovely, historically Dutch town of Pella, Iowa.
+            </div>
+            <div class="personallife-card background-image" style="background-image: url(img/thursdays-in-pella.png);">
+                My hobbies include playing the oboe! I enjoy playing with community bands & orchestras whenever I can.
+            </div>
+            <div class="personallife-card background-image" style="background-image: url(img/ada.png);">
+                I live with my 1½ year-old whippet-mix, Ada, who is full of energy.
+            </div>
+            <div class="personallife-card background-image" style="background-image: url(img/home-assistant.png);">
+                In my free time, I like tinkering with home improvement and putting my programming skills to use with
+                home automation!
+            </div>
+        </div>
     </div>
 
     <!-------------------------------------------------------------------------
@@ -217,15 +226,18 @@
     <div>
         <h2><a id="Links">Links</a></h2>
         <div class="links">
-            <img src="img/email.png" />
-            <img src="img/github.png" />
-            <img src="img/linkedin.png" />
+            <a href="mailto:stewythe1st@gmail.com"><img src="img/email.png" /></a>
+            <a href="https://github.com/stewythe1st"><img src="img/github.png" /></a>
+            <a href="https://www.linkedin.com/in/stuart-miller-153265b1"><img src="img/linkedin.png" /></a>
         </div>
     </div>
 
     <!-------------------------------------------------------------------------
       - Footer
       ------------------------------------------------------------------------>
+    <div class="footer">
+        &copy; 2022 Stuart Miller&emsp;-&emsp;Hosted in Pella, IA.
+    </div>
 
     <!-------------------------------------------------------------------------
       - Bottom Navigation

@@ -7,7 +7,30 @@ html {
 }
 
 body {
-    margin-bottom: 5rem;
+    line-height: 1.50;
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 }
 
 * {
@@ -20,31 +43,6 @@ a {
 
 .subtle-emphasis {
     font-weight: bold;
-}
-
-@media screen and (min-width: 720px) {
-
-
-    body {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        line-height: 1.50
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    body {
-        padding-left: 7rem;
-        padding-right: 7rem;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    body {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        line-height: 1.50
-    }
 }
 
 .row {
@@ -76,9 +74,30 @@ h2 {
     font-size: 4rem;
 }
 
+h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.background-image {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 /******************************************************************************
  * About Me Section
  *****************************************************************************/
+.aboutme,
+.aboutme *:not(span) {
+    text-align: center;
+    margin: 2rem;
+}
+
+.aboutme h3 {
+    text-align: center;
+    margin-right: 2rem;
+}
 
 /******************************************************************************
  * Experience Section
@@ -96,11 +115,9 @@ h2 {
 }
 
 .logo>img {
-    top: -2rem;
+    left: calc(10%);
+    max-width: calc(80%);
     position: absolute;
-    opacity: 0.10;
-    max-width: 14rem;
-    max-height: 20rem;
     transition: 1s all ease;
     opacity: 0.0;
 }
@@ -116,6 +133,12 @@ li.active .logo>img {
 /******************************************************************************
  * Education Section
  *****************************************************************************/
+.education {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
 
 /******************************************************************************
  * Bullet Point styling for Experience and Education Sections
@@ -270,7 +293,6 @@ ul.flow-points li ul.flow-points li::before {
     }
 }
 
-
 .skills {
     display: flex;
     vertical-align: middle;
@@ -285,11 +307,57 @@ ul.flow-points li ul.flow-points li::before {
 }
 
 /******************************************************************************
+ * Personal Life Section
+ *****************************************************************************/
+.personallife {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.personallife-card {
+    margin: 1rem;
+    border-radius: 1rem;
+    height: 15rem;
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF 1px 1px 0 #FFF;
+}
+
+/******************************************************************************
  * Links Section
  *****************************************************************************/
 .links img {
     width: 5rem;
     height: 5rem;
+    margin: 1.5rem;
+}
+
+.links img:hover {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+}
+
+.links {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************************************************************************
+ * Footer
+ *****************************************************************************/
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 /******************************************************************************
