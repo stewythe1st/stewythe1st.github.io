@@ -4,11 +4,20 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 0;
+        var elementVisible = 100;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
         } else {
             reveals[i].classList.remove("active");
+        }
+    }
+    var scrollPos = document.body.scrollTop;
+    var nav = document.querySelectorAll(".navigation")
+    for (var i = 0; i < nav.length; i++) {
+        if (scrollPos > 100) {
+            nav[i].classList.add("active")
+        } else {
+            nav[i].classList.remove("active")
         }
     }
 }

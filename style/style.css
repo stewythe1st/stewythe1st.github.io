@@ -1,14 +1,17 @@
+/******************************************************************************
+ * Overall Rules
+ *****************************************************************************/
 html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 
-* {
-    transition: 1s all ease;
+body {
+    margin-bottom: 5rem;
 }
 
-.logo {
-    position: relative;
+* {
+    transition: 1s all ease;
 }
 
 a {
@@ -19,23 +22,8 @@ a {
     font-weight: bold;
 }
 
-.logo>img {
-    top: -2rem;
-    position: absolute;
-    opacity: 0.10;
-    max-width: 14rem;
-    max-height: 20rem;
-    transition: 1s all ease;
-    opacity: 0.0;
-}
-li.active .logo>img {
-    opacity: 0.1
-}
-
 @media screen and (min-width: 720px) {
-    .row {
-        display: flex;
-    }
+
 
     body {
         padding-left: 3rem;
@@ -57,6 +45,10 @@ li.active .logo>img {
         padding-right: 2rem;
         line-height: 1.50
     }
+}
+
+.row {
+    display: flex;
 }
 
 .column_20 {
@@ -84,10 +76,13 @@ h2 {
     font-size: 4rem;
 }
 
-.menu {
-    position: fixed
-}
+/******************************************************************************
+ * About Me Section
+ *****************************************************************************/
 
+/******************************************************************************
+ * Experience Section
+ *****************************************************************************/
 .exp>div {
     align-items: center;
 }
@@ -96,19 +91,35 @@ h2 {
     font-weight: bold;
 }
 
+.logo {
+    position: relative;
+}
+
+.logo>img {
+    top: -2rem;
+    position: absolute;
+    opacity: 0.10;
+    max-width: 14rem;
+    max-height: 20rem;
+    transition: 1s all ease;
+    opacity: 0.0;
+}
+
+li.active .logo>img {
+    opacity: 0.1
+}
+
 .exp_loc {}
 
 .exp_time {}
 
+/******************************************************************************
+ * Education Section
+ *****************************************************************************/
 
-.card {
-    width: 40%;
-    border: 0.2rem;
-    border-color: black;
-    color: aquamarine;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
+/******************************************************************************
+ * Bullet Point styling for Experience and Education Sections
+ *****************************************************************************/
 ul.flow-points {
     position: relative;
 }
@@ -129,6 +140,7 @@ ul.flow-points li {
     padding-bottom: 0.75rem;
     opacity: 0.0
 }
+
 ul.flow-points li.active {
     position: relative;
     padding-top: 1rem;
@@ -162,7 +174,7 @@ ul.flow-points>li.active::before {
 
 ul.flow-points>li:after {
     width: 0.2rem;
-    height: calc(100%);
+    height: calc(100% - 0.4rem);
     content: "";
     position: absolute;
     z-index: 2;
@@ -196,6 +208,141 @@ ul.flow-points ul.flow-points>li.active:last-of-type:after {
     transform: scaleX(1.0);
 }
 
-ul.flow-points li ul.flow-points li:before {
+ul.flow-points li ul.flow-points li::before {
     background: rgb(255, 255, 255);
+}
+
+/******************************************************************************
+ * Skills Section
+ *****************************************************************************/
+.skills .grid img {
+    max-width: 4rem;
+    max-height: 4rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.75rem;
+}
+
+.skills .grid div {
+    display: inline-grid;
+    position: relative;
+    padding: 1rem;
+    padding-left: 6rem;
+    height: 5.5rem;
+    margin: 0.5rem;
+    width: 9rem;
+    background-color: rgb(206, 206, 206);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+
+.skills .grid div:hover {
+    margin: 0.2rem;
+    width: 9.4rem;
+    height: 5.9rem;
+}
+
+.skills .grid div span {
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1190px) {
+    .skills .grid {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .skills .grid {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .skills .grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+.skills {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .grid {
+    display: grid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/******************************************************************************
+ * Links Section
+ *****************************************************************************/
+.links img {
+    width: 5rem;
+    height: 5rem;
+}
+
+/******************************************************************************
+ * Navigation Menus
+ *****************************************************************************/
+.menu {
+    position: fixed
+}
+
+.navigation {
+    background-color: blue;
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    border-radius: 1rem;
+    transform: scaleX(0.0) scaleY(0.0) rotate(-120deg);
+}
+
+.navigation.top {
+    top: 2rem;
+}
+
+.navigation.bottom {
+    bottom: 2rem;
+}
+
+.navigation .hamburger,
+.navigation .hamburger:before,
+.navigation .hamburger:after {
+    background-color: white;
+    position: relative;
+    top: 0.86rem;
+    left: 0.5rem;
+    width: 1rem;
+    height: 0.12rem;
+}
+
+.navigation.active {
+    transform: scaleX(1.0) scaleY(1.0) rotate(0deg);
+}
+
+.navigation .hamburger:before,
+.navigation .hamburger:after {
+    display: inline-block;
+    content: "";
+    left: 0rem;
+}
+
+.navigation .hamburger:before {
+    top: -0.37rem;
+}
+
+.navigation .hamburger:after {
+    top: 0.25rem;
 }

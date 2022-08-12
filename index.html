@@ -14,8 +14,14 @@
     <!-- FavIcon -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 </head>
-
 <body>
+    
+    <!-------------------------------------------------------------------------
+      - Top Navigation
+      ------------------------------------------------------------------------>
+    <div class="navigation top">
+        <div class="hamburger"></div>
+    </div>
     <div style="text-align: center;">
         <h1>Stuart Miller</h1>
         <div class="container">
@@ -24,9 +30,14 @@
                 <div class="column_20"><a href="#Experience">Experience</a></div>
                 <div class="column_20"><a href="#Education">Education</a></div>
                 <div class="column_20"><a href="#Skills">Skills</a></div>
+                <div class="column_20"><a href="#PersonalLife">Personal Life</a></div>
             </div>
         </div>
     </div>
+
+    <!-------------------------------------------------------------------------
+      - About Me Section
+      ------------------------------------------------------------------------>
     <div>
         <h2><a id="AboutMe">About Me</a></h2>
         <div class="row">
@@ -34,15 +45,17 @@
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYMp8GlxKXpDD_naZMRGaa5znZMd-4ydPonsUJMaYY5E0cj6Bba0DO1ViZORaKKEhBnJ8&usqp=CAU" />
             </div>
-            <div class="column_70">
-                <p>I am an <span class="subtle-emphasis">embedded software engineer</span>. My main areas of expertise include working with close-to-hardware
-                    C/C++ code. I also have experience working with Matlab/Simulink and Qt. In my work, I welcome the
-                    challenges of <span class="subtle-emphasis">solving problems</span> and <span
-                        class="subtle-emphasis">architecting complex systems</span>.</p>
-            </div>
+            <p>I am an <span class="subtle-emphasis">embedded software engineer</span>. My main area of expertise
+                is working with close-to-hardware
+                C/C++ code. I also have experience working with Matlab/Simulink and Qt. In my work, I welcome the
+                challenges of <span class="subtle-emphasis">solving problems</span> and <span
+                    class="subtle-emphasis">architecting complex systems</span>.</p>
         </div>
     </div>
-    <!--- Work experience -->
+
+    <!-------------------------------------------------------------------------
+      - Work experience                                                  
+      ------------------------------------------------------------------------>
     <ul class="flow-points">
         <h2><a id="Experience">Experience</a></h2>
         <li>
@@ -116,6 +129,10 @@
                 </ul>
             </div>
     </ul>
+
+    <!-------------------------------------------------------------------------
+      - Education Section
+      ------------------------------------------------------------------------>
     <ul class="flow-points">
         <h2><a id="Education">Education</a></h2>
         <li>
@@ -133,11 +150,95 @@
             <div class="exp_desc">Minors in Mathematics & Computer Science</div>
         </li>
     </ul>
+
+    <!-------------------------------------------------------------------------
+      - Experience Section
+      ------------------------------------------------------------------------>
     <div>
         <h2><a id="Skills">Skills</a></h2>
+        <div class="skills">
+            <div class="grid">
+                <div><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" />
+                    <span>Git</span>
+                </div>
+                <div><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" />
+                    <span>C / C++</span>
+                </div>
+                <div><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" />
+                    <span>Matlab / Simulink</span>
+                </div>
+                <div><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/640px-Qt_logo_2016.svg.png" />
+                    <span>Qt</span>
+                </div>
+                <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/640px-Tux.svg.png" />
+                    <span>Linux / Embedded Linux</span>
+                </div>
+                <div><img src="https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg" />
+                    <span>CI / CD</span>
+                </div>
+                <div><img
+                        src="https://blogs.sap.com/wp-content/uploads/2019/10/282126_MultipleChecklist_R_purple.png" />
+                    <span>Test-Driven Development</span>
+                </div>
+                <div><img src="https://www.computerhope.com/issues/pictures/duplicate-document.png" />
+                    <span>Software Requirements</span>
+                </div>
+                <div><img src="https://www.iso.org/obp/graphics/grs/ba12ca29-11ef-425a-99c5-ef66d0bb489a_200.png" />
+                    <span>SAE J1939 CAN bus</span>
+                </div>
+                <div><img
+                        src="https://w7.pngwing.com/pngs/850/219/png-transparent-printed-circuit-board-electronic-circuit-electronics-circuit-board-photography-grass-wire.png" />
+                    <span>Hardware Troubleshooting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Personal Life Section
+      ------------------------------------------------------------------------>
+    <div>
+        <h2><a id="Skills">Personal Life</a></h2>
+        <ul>
+            <li>I currently live in the lovely Dutch town of Pella, Iowa.</li>
+            <li>My hobbies include playing the oboe! I enjoy playing with community bands/orchestras whenever I can.
+            </li>
+            <li>I live with my 1½ year-old whippet-mix, Ada, who is full of energy. </li>
+            <li>In my free time, I like tinkering with home improvement and putting my programming skills to use with
+                home automation! My goal is to (securely) automate as much of my house as I can.</li>
+        </ul>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Links Section
+      ------------------------------------------------------------------------>
+    <div>
+        <h2><a id="Links">Links</a></h2>
+        <div class="links">
+            <img src="img/email.png" />
+            <img src="img/github.png" />
+            <img src="img/linkedin.png" />
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Footer
+      ------------------------------------------------------------------------>
+
+    <!-------------------------------------------------------------------------
+      - Bottom Navigation
+      ------------------------------------------------------------------------>
+    <div class="navigation bottom">
+        <div class="hamburger"></div>
     </div>
 
 </body>
+
+<!-----------------------------------------------------------------------------
+  - Scripts
+  ---------------------------------------------------------------------------->
 <script src="style/script.js"></script>
 
 </html>
