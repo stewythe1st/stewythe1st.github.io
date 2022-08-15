@@ -16,6 +16,11 @@
 </head>
 
 <body>
+    <div class="background">
+        <div class="background-triangle">
+
+        </div>
+    </div>
 
     <!-------------------------------------------------------------------------
       - Top Navigation
@@ -32,6 +37,7 @@
                 <div class="column_20"><a href="#Education">Education</a></div>
                 <div class="column_20"><a href="#Skills">Skills</a></div>
                 <div class="column_20"><a href="#PersonalLife">Personal Life</a></div>
+                <div class="column_20"><a href="#Links">Links</a></div>
             </div>
         </div>
     </div>
@@ -40,11 +46,9 @@
       - About Me Section
       ------------------------------------------------------------------------>
     <div class="aboutme">
-
         <div class="row">
             <div class="column_50">
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYMp8GlxKXpDD_naZMRGaa5znZMd-4ydPonsUJMaYY5E0cj6Bba0DO1ViZORaKKEhBnJ8&usqp=CAU" />
+                <canvas id="aboutme-canvas"></canvas>
             </div>
             <div class="column_50">
                 <h3><a id="AboutMe">About Me</a></h3>
@@ -52,9 +56,15 @@
                     I am an <span class="subtle-emphasis">embedded software engineer</span>.
                     My main area of expertise is working with close-to-hardware <span class="subtle-emphasis">C/C++
                         code</span>.
-                    I also have experience working with Matlab/Simulink and Qt.
+                    I also have experience working with Qt and Matlab/Simulink.
                     In my work, I welcome the challenges of <span class="subtle-emphasis">solving problems</span> and
                     <span class="subtle-emphasis">architecting complex systems</span>.
+                </p>
+                <p>
+                    Questions?<br>
+                    <a href="mailto:stewythe1st@gmail.com">Send me an email.</a><br>
+                    or<br>
+                    <a href="">View a printable resume.</a>
                 </p>
             </div>
         </div>
@@ -79,21 +89,29 @@
                 </div>
                 <ul class="column_70">
                     <li>Develop machine control software for Vermeer's next generation horizontal directional drills
-                        using Simulink and C/C++</li>
+                        using Simulink and C/C++.</li>
                     <li>Develop display software using Qt, representing the first Vermeer drill with touchscreen
                         capabilities.</li>
-                    <li>Architect the software, hardware, and integration of a common platform for all next-generation
-                        horizontal directional drills.</li>
+                    <li>Architect the software, hardware, and system integration of a common platform for all
+                        next-generation horizontal directional drills.</li>
+                    <li>Design future-proof systems based on the needs of current automation features as well as desires
+                        for expansion and R&D.</li>
                     <li>Bring the first horizontal directional drill on the common platform, the <a
                             href="https://youtu.be/GklTx4LEOnM">Vermeer D550</a> to market.</li>
                     <li>Troubleshoot software, electrical, hydraulic, and mechanical problems in collaboration with
                         other engineering teams.</li>
+                    <li>Drive development towards purpose-build in-house software solutions instead of relying on
+                        proprietary programming environments and tools from specific vendors.</li>
+                    <li>Collaborate with hardware vendors to introduce new controller hardware, purpose-built for
+                        Vermeer's needs, and oversee its adoption into the existing programming environment.</li>
                     <li>Introduce CI/CD workflows using Github Actions; whereas previously all builds & tests were run
                         manually.</li>
                     <li>Work extensively on new low level common hardware abstraction layer C code to be shared across
                         segments of the company.</li>
                     <li>Develop a communication scheme based on SAE J1939 DM14-DM16 messages for automatic adjustment,
                         retention, and secure transferral of protected parameters between machine control units.</li>
+                    <li>Complete an accelerated project to update port legacy software to new hardware when supply chain
+                        constraints threatened key product lines.</li>
                 </ul>
             </div>
         </li>
@@ -189,10 +207,13 @@
                     <span>Software Requirements</span>
                 </div>
                 <div><img src="img/iso-7000-network.png" />
-                    <span>SAE J1939 CAN bus</span>
+                    <span>SAE J1939<br>CAN bus</span>
                 </div>
                 <div><img src="img/circuitboard.png" />
                     <span>Hardware Troubleshooting</span>
+                </div>
+                <div><img src="img/gnu-make.png" />
+                    <span>GNU Make / Makefiles</span>
                 </div>
             </div>
         </div>
@@ -211,11 +232,11 @@
                 My hobbies include playing the oboe! I enjoy playing with community bands & orchestras whenever I can.
             </div>
             <div class="personallife-card background-image" style="background-image: url(img/ada.png);">
-                I live with my 1½ year-old whippet-mix, Ada, who is full of energy.
+                I live with my 1½ year-old whippet-mix, Ada, who is full of energy!
             </div>
             <div class="personallife-card background-image" style="background-image: url(img/home-assistant.png);">
                 In my free time, I like tinkering with home improvement and putting my programming skills to use with
-                home automation!
+                home automation.
             </div>
         </div>
     </div>
@@ -242,8 +263,8 @@
     <!-------------------------------------------------------------------------
       - Bottom Navigation
       ------------------------------------------------------------------------>
-    <div class="navigation bottom">
-        <div class="hamburger"></div>
+    <div class="navigation bottom" onClick="scrollToTop()">
+        <div class="back-to-top"></div>
     </div>
 
 </body>
