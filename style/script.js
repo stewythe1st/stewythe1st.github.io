@@ -11,7 +11,7 @@ function reveal() {
             reveals[i].classList.remove("active");
         }
     }
-    var scrollPos = document.body.scrollTop;
+    var scrollPos = window.scrollY;
     var nav = document.querySelectorAll(".navigation")
     for (var i = 0; i < nav.length; i++) {
         if (scrollPos > 100) {
