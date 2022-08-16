@@ -9,6 +9,9 @@
     <!-- Mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css" />
     <!-- FavIcon -->
@@ -17,27 +20,30 @@
 
 <body>
     <div class="background">
-        <div class="background-triangle">
-
-        </div>
+        <div class="background-triangle"></div>
     </div>
 
     <!-------------------------------------------------------------------------
       - Top Navigation
       ------------------------------------------------------------------------>
-    <div class="navigation top">
+    <!-- <div class="navigation top">
         <div class="hamburger"></div>
-    </div>
+    </div> -->
     <div style="text-align: center;">
         <h1>Stuart Miller</h1>
+        <br>
+        <h4>Embedded Software Engineer</h4>
+        <h4><a href="mailto:stewythe1st@gmail.com">stewythe1st@gmail.com</a></h4>
+        <br>
+        <br>
         <div class="container">
-            <div class="section-links row">
-                <div class="column_20"><a href="#AboutMe">About Me</a></div>
-                <div class="column_20"><a href="#Experience">Experience</a></div>
-                <div class="column_20"><a href="#Education">Education</a></div>
-                <div class="column_20"><a href="#Skills">Skills</a></div>
-                <div class="column_20"><a href="#PersonalLife">Personal Life</a></div>
-                <div class="column_20"><a href="#Links">Links</a></div>
+            <div class="section-links row shadow">
+                <div><a class="hover-underline" href="#AboutMe">About Me</a></div>
+                <div><a class="hover-underline" href="#Experience">Experience</a></div>
+                <div><a class="hover-underline" href="#Education">Education</a></div>
+                <div><a class="hover-underline" href="#Skills">Skills</a></div>
+                <div><a class="hover-underline" href="#PersonalLife">Personal Life</a></div>
+                <div><a class="hover-underline" href="#Links">Links</a></div>
             </div>
         </div>
     </div>
@@ -45,10 +51,11 @@
     <!-------------------------------------------------------------------------
       - About Me Section
       ------------------------------------------------------------------------>
-    <div class="aboutme">
+    <div class="aboutme shadow">
         <div class="row">
             <div class="column_50">
-                <canvas id="aboutme-canvas"></canvas>
+                <canvas onClick="drawCircuit('aboutme-canvas');" id="aboutme-canvas" width="500px;"
+                    height="500px"></canvas>
             </div>
             <div class="column_50">
                 <h3><a id="AboutMe">About Me</a></h3>
@@ -60,12 +67,12 @@
                     In my work, I welcome the challenges of <span class="subtle-emphasis">solving problems</span> and
                     <span class="subtle-emphasis">architecting complex systems</span>.
                 </p>
-                <p>
-                    Questions?<br>
-                    <a href="mailto:stewythe1st@gmail.com">Send me an email.</a><br>
-                    or<br>
-                    <a href="">View a printable resume.</a>
-                </p>
+                <div>
+                    <p>Questions?</p>
+                    <a class="aboutme-button shadow" href="mailto:stewythe1st@gmail.com">Send me an email.</a>
+                    <p>or</p>
+                    <a class="aboutme-button shadow" href="">View a printable resume.</a>
+                </div>
             </div>
         </div>
     </div>
@@ -73,89 +80,99 @@
     <!-------------------------------------------------------------------------
       - Work experience                                                  
       ------------------------------------------------------------------------>
-    <ul class="flow-points experience">
-        <h2><a id="Experience">Experience</a></h2>
-        <li>
-            <div class="row">
-                <div class="column_30 background-image" style="background-image: url(img/vermeer.png);">
-                    <div class="exp_title">Vermeer Corporation</div>
-                    <div class="exp_loc">Pella, IA</div>
-                    <div class="exp_time">May 2018 - Present</div>
-                    <ul class="flow-points">
-                        <li>Embedded Software Engineer II<br>May 2021 - Present</li>
-                        <li>Embedded Software Engineer I<br>May 2019 - May 2021</li>
-                        <li>Embedded Software Engineer Co-Op<br>May 2018 - December 2018</li>
+    <h2><a id="Experience"><i class="material-icons">laptop_chromebook</i>Experience</a></h2>
+    <div class="experience-outer shadow">
+        <ul class="flow-points experience">
+            <li>
+                <div class="row">
+                    <div class="column_30 background-image" style="background-image: url(img/vermeer.png);">
+                        <div class="exp_title">Vermeer Corporation</div>
+                        <div class="exp_loc">Pella, IA</div>
+                        <div class="exp_time">May 2018 - Present</div>
+                        <ul class="flow-points">
+                            <li>Embedded Software Engineer II<br>May 2021 - Present</li>
+                            <li>Embedded Software Engineer I<br>May 2019 - May 2021</li>
+                            <li>Embedded Software Engineer Co-Op<br>May 2018 - December 2018</li>
+                        </ul>
+                    </div>
+                    <ul class="column_70">
+                        <li>Develop machine control software for Vermeer's next generation horizontal directional drills
+                            using Simulink and C/C++.</li>
+                        <li>Develop display software using Qt, representing the first Vermeer drill with touchscreen
+                            capabilities.</li>
+                        <li>Architect the software, hardware, and system integration of a common platform for all
+                            next-generation horizontal directional drills.</li>
+                        <li>Design future-proof systems based on the needs of current automation features as well as
+                            desires
+                            for expansion and R&D.</li>
+                        <li>Bring the first horizontal directional drill on the common platform, the <a
+                                href="https://youtu.be/GklTx4LEOnM">Vermeer D550</a> to market.</li>
+                        <li>Troubleshoot software, electrical, hydraulic, and mechanical problems in collaboration with
+                            other engineering teams.</li>
+                        <li>Drive development towards purpose-build in-house software solutions instead of relying on
+                            proprietary programming environments and tools from specific vendors.</li>
+                        <li>Collaborate with hardware vendors to introduce new controller hardware, purpose-built for
+                            Vermeer's needs, and oversee its adoption into the existing programming environment.</li>
+                        <li>Introduce CI/CD workflows using Github Actions; whereas previously all builds & tests were
+                            run
+                            manually.</li>
+                        <li>Work extensively on new low level common hardware abstraction layer C code to be shared
+                            across
+                            segments of the company.</li>
+                        <li>Develop a communication scheme based on SAE J1939 DM14-DM16 messages for automatic
+                            adjustment,
+                            retention, and secure transferral of protected parameters between machine control units.
+                        </li>
+                        <li>Complete an accelerated project to update port legacy software to new hardware when supply
+                            chain
+                            constraints threatened key product lines.</li>
                     </ul>
                 </div>
-                <ul class="column_70">
-                    <li>Develop machine control software for Vermeer's next generation horizontal directional drills
-                        using Simulink and C/C++.</li>
-                    <li>Develop display software using Qt, representing the first Vermeer drill with touchscreen
-                        capabilities.</li>
-                    <li>Architect the software, hardware, and system integration of a common platform for all
-                        next-generation horizontal directional drills.</li>
-                    <li>Design future-proof systems based on the needs of current automation features as well as desires
-                        for expansion and R&D.</li>
-                    <li>Bring the first horizontal directional drill on the common platform, the <a
-                            href="https://youtu.be/GklTx4LEOnM">Vermeer D550</a> to market.</li>
-                    <li>Troubleshoot software, electrical, hydraulic, and mechanical problems in collaboration with
-                        other engineering teams.</li>
-                    <li>Drive development towards purpose-build in-house software solutions instead of relying on
-                        proprietary programming environments and tools from specific vendors.</li>
-                    <li>Collaborate with hardware vendors to introduce new controller hardware, purpose-built for
-                        Vermeer's needs, and oversee its adoption into the existing programming environment.</li>
-                    <li>Introduce CI/CD workflows using Github Actions; whereas previously all builds & tests were run
-                        manually.</li>
-                    <li>Work extensively on new low level common hardware abstraction layer C code to be shared across
-                        segments of the company.</li>
-                    <li>Develop a communication scheme based on SAE J1939 DM14-DM16 messages for automatic adjustment,
-                        retention, and secure transferral of protected parameters between machine control units.</li>
-                    <li>Complete an accelerated project to update port legacy software to new hardware when supply chain
-                        constraints threatened key product lines.</li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="row">
-                <div class="column_30 background-image" style="background-image: url(img/garmin.png);">
-                    <div class="exp_title">Garmin International</div>
-                    <div class="exp_loc">Olathe, KS</div>
-                    <div class="exp_time">October, 2015 - May, 2016</div>
-                    <ul class="flow-points">
-                        <li>Embedded Software Intern, Aviation</li>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="column_30 background-image" style="background-image: url(img/garmin.png);">
+                        <div class="exp_title">Garmin International</div>
+                        <div class="exp_loc">Olathe, KS</div>
+                        <div class="exp_time">October, 2015 - May, 2016</div>
+                        <ul class="flow-points">
+                            <li>Embedded Software Intern, Aviation</li>
+                        </ul>
+                    </div>
+                    <ul class="column_70">
+                        <li>Work as part of a team to develop kernel layer drivers and interfaces for Garmin's
+                            G1000-G5000
+                            series cockpit display solutions.</li>
+                        <li>Complete a refactor of part of Garmin's module testing environment to allow for enhanced
+                            software verification at the system level.</li>
                     </ul>
                 </div>
-                <ul class="column_70">
-                    <li>Work as part of a team to develop kernel layer drivers and interfaces for Garmin's G1000-G5000
-                        series cockpit display solutions.</li>
-                    <li>Complete a refactor of part of Garmin's module testing environment to allow for enhanced
-                        software verification at the system level.</li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <div class="row">
-                <div class="column_30 background-image" style="background-image: url(img/boeing.png);">
-                    <div class="exp_title">The Boeing Company</div>
-                    <div class="exp_loc">St. Louis, MO</div>
-                    <div class="exp_time">May 2015 - August 2015</div>
-                    <ul class="flow-points">
-                        <li>IT Intern, Business Systems Data Warehouse & Analytics</li>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="column_30 background-image" style="background-image: url(img/boeing.png);">
+                        <div class="exp_title">The Boeing Company</div>
+                        <div class="exp_loc">St. Louis, MO</div>
+                        <div class="exp_time">May 2015 - August 2015</div>
+                        <ul class="flow-points">
+                            <li>IT Intern, Business Systems Data Warehouse & Analytics</li>
+                        </ul>
+                    </div>
+                    <ul class="column" style="flex: 70%">
+                        <li>Gain experience working in a large corporate environment</li>
+                        <li>Assist in updating and transferring finance web portal code</li>
                     </ul>
                 </div>
-                <ul class="column" style="flex: 70%">
-                    <li>Gain experience working in a large corporate environment</li>
-                    <li>Assist in updating and transferring finance web portal code</li>
-                </ul>
-            </div>
-    </ul>
+        </ul>
+    </div>
 
     <!-------------------------------------------------------------------------
       - Education Section
       ------------------------------------------------------------------------>
-    <div>
-        <h2><a id="Education">Education</a></h2>
+    <h2><a id="Education"><i class="material-icons">school</i>Education</a></h2>
+    <div class="shadow">
         <div class="education">
+            <img src="img/mst.png" />
             <ul class="flow-points">
                 <li>
                     <div class="exp_title">Master's of Computer Engineering</div>
@@ -176,10 +193,10 @@
     </div>
 
     <!-------------------------------------------------------------------------
-      - Experience Section
+      - Skills Section
       ------------------------------------------------------------------------>
-    <div>
-        <h2><a id="Skills">Skills</a></h2>
+    <h2><a id="Skills"><i class="material-icons">construction</i>Skills</a></h2>
+    <div class="shadow">
         <div class="skills">
             <div class="grid">
                 <div><img src="img/git.png" />
@@ -222,8 +239,8 @@
     <!-------------------------------------------------------------------------
       - Personal Life Section
       ------------------------------------------------------------------------>
-    <div>
-        <h2><a id="PersonalLife">Personal Life</a></h2>
+    <h2><a id="PersonalLife"><i class="material-icons">person</i>Personal Life</a></h2>
+    <div class="shadow">
         <div class="personallife">
             <div class="personallife-card background-image" style="background-image: url(img/pella.png);">
                 I currently live in the lovely, historically Dutch town of Pella, Iowa.
@@ -244,8 +261,8 @@
     <!-------------------------------------------------------------------------
       - Links Section
       ------------------------------------------------------------------------>
+    <h2><a id="Links">Links</a></h2>
     <div>
-        <h2><a id="Links">Links</a></h2>
         <div class="links">
             <a href="mailto:stewythe1st@gmail.com"><img src="img/email.png" /></a>
             <a href="https://github.com/stewythe1st"><img src="img/github.png" /></a>
@@ -257,8 +274,15 @@
       - Footer
       ------------------------------------------------------------------------>
     <div class="footer">
-        &copy; 2022 Stuart Miller&emsp;-&emsp;Hosted in Pella, IA.
+        &copy;
+        <script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+        </script>
+        Stuart Miller&emsp;-&emsp;Hosted in Pella, IA.
+        <div class="footer-background"></div>
     </div>
+
 
     <!-------------------------------------------------------------------------
       - Bottom Navigation
@@ -272,6 +296,7 @@
 <!-----------------------------------------------------------------------------
   - Scripts
   ---------------------------------------------------------------------------->
-<script src="style/script.js"></script>
+<script type="text/javascript" src="circuit/circuit.js"></script>
+<script type="text/javascript" src="style/script.js"></script>
 
 </html>
