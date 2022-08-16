@@ -1,258 +1,302 @@
 <html lang="en">
+
 <head>
+    <!-- Basics -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Stuart Miller Resume">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Stuart Miller</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <meta name="description" content="Stuart Miller Resume">
+    <meta name="author" content="Stuart Miller">
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-teal.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- FavIcon -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
+    <div class="background">
+        <div class="background-triangle"></div>
+    </div>
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title" onclick="window.location = '..'" style="cursor: pointer;">Stuart Miller</span>
-            <div class="mdl-layout-spacer"></div>
-            <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="">(816) 785-4105</a>
-                <a class="mdl-navigation__link" href="mailto:sm67c@mst.edu">stuart.miller@mst.edu</a>
-            </nav>
-        </div>
-    </header>
-
-    
-<main class="mdl-layout__content">
-    <div class="page-content">
-        
-        <!--- Overview Section --->
-        <div class="section-overview mdl-card mdl-shadow--6dp">
-            <div class="profile-image">
-                <img src="./img/stuart.jpg">
+    <!-------------------------------------------------------------------------
+      - Top Navigation
+      ------------------------------------------------------------------------>
+    <!-- <div class="navigation top">
+        <div class="hamburger"></div>
+    </div> -->
+    <div style="text-align: center;">
+        <h1>Stuart Miller</h1>
+        <br>
+        <h4>Embedded Software Engineer</h4>
+        <h4><a href="mailto:stewythe1st@gmail.com">stewythe1st@gmail.com</a></h4>
+        <br>
+        <br>
+        <div class="container">
+            <div class="section-links row shadow">
+                <div><a class="hover-underline" href="#AboutMe">About Me</a></div>
+                <div><a class="hover-underline" href="#Experience">Experience</a></div>
+                <div><a class="hover-underline" href="#Education">Education</a></div>
+                <div><a class="hover-underline" href="#Skills">Skills</a></div>
+                <div><a class="hover-underline" href="#PersonalLife">Personal Life</a></div>
+                <div><a class="hover-underline" href="#Links">Links</a></div>
             </div>
-            <div class="mdl-card__title">
-                <div class="mdl-card__title-text title">
-                    Stuart Miller
-                    <div class="mdl-card__title-text subtitle">
-                        Computer Engineering Master's Student
-                    </div>
-                </div>
-            </div>
-            <div class="mdl-card__supporting-text">
-                I'm a computer engineering graduate student, with coursework in both embedded systems and general programming.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-				<a href="coursework.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Projects</a>
-                <a href="https://github.com/stewythe1st" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Github</a>
-                <a href="http://web.mst.edu/~sm67c/resume.pdf" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Printable Resume</a>
-            </div>
-        </div>
-        
-        
-		<!--- Education Section --->
-		<div class="section-title"><i class="material-icons">school</i>Education</div>
-		<div class="section-edu mdl-card mdl-shadow--6dp">
-            <div class="mdl-card__title">
-				<img src="./img/mstece.png" />
-                <div class="mdl-card__title-text title">
-                    Missouri University of Science & Technology
-                    <div class="mdl-card__title-text subtitle">
-						Master's of Computer Engineering
-						<div class="mdl-card__title-text subtitle-blue">
-							Spring 2019
-						</div>
-                        Bachelor's of Computer Engineering
-						<div class="mdl-card__title-text subtitle-blue">
-							Spring 2017
-						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    
-        <!--- Work Experience Section --->
-		<div class="section-title"><i class="material-icons">laptop_chromebook</i>Work Experience</div>
-		
-        <div class="section-exp mdl-card mdl-shadow--6dp">
-            <div class="mdl-card__title">
-                <div class="mdl-card__title-text title">
-                    Vermeer Corporation
-                    <div class="mdl-card__title-text subtitle">
-                        Embedded Software Engineer I
-                        <div class="mdl-card__title-text subtitle-blue">
-                            May 2018 (as an intern) - Present
-                        </div>
-                    </div>
-                </div>
-                <img src="./img/vermeer.png" />
-            </div>
-            <ul class="mdl-card__supporting-text">
-				<li>Write machines control software for Vermeer's Trenchless & Utility products lines</li>
-				<li>Participate in code reviews, requirements writing, architecture planning, and software testing</li>
-				<li>Create user interface applications for machine displays in Qt QML, C++, and Simulink</li>
-                <li>Work closely with Electrical, Hydraulics, and Systems engineers to create effective machine control systems</li>
-            </ul>
-        </div>
-		
-        <div class="section-exp mdl-card mdl-shadow--6dp">
-            <div class="mdl-card__title">
-                <div class="mdl-card__title-text title">
-                    Missouri S&T IT Department
-                    <div class="mdl-card__title-text subtitle">
-                        IT Help Desk Senior Student Technician
-                        <div class="mdl-card__title-text subtitle-blue">
-                            Oct. 2014 - May 2019 (when in school)
-                        </div>
-                    </div>
-                </div>
-                <img src="./img/mst.png" />
-            </div>
-            <ul class="mdl-card__supporting-text">
-				<li>Investigate computer related problems, determine the cause, and implement a solution or coordinate with the appropriate department to resolve the issue</li>
-				<li>Assist in training new employees and implementing new policies</li>
-				<li>Serve as a point of escalation for demanding issues</li>
-                <li>Operate and manage the 3D printers available to faculty and students</li>
-                <li>Repair laptops as a Dell certified technician</li>
-            </ul>
-        </div>
-        
-        <div class="section-exp mdl-card mdl-shadow--6dp">
-            <div class="mdl-card__title">
-                <div class="mdl-card__title-text title">
-                    Garmin International
-                    <div class="mdl-card__title-text subtitle">
-                        Software Engineering Intern - Aviation
-                        <div class="mdl-card__title-text subtitle-blue">
-                            Oct. 2015 - Aug. 2016
-                        </div>
-                    </div>
-                </div>
-                <img src="./img/garmin.png" />
-            </div>
-            <ul class="mdl-card__supporting-text">
-                <li>Developed and tested software used on aviation displays and user interfaces</li>
-                <li>Worked closely within the constraints of hardware to write effective embedded C code</li>
-                <li>Completed a refactor of part of Garmin’s module testing environment to allow for enhanced software verification at the system level</li>
-            </ul>
-        </div>
-        
-        <div class="section-exp mdl-card mdl-shadow--6dp">
-            <div class="mdl-card__title">
-                <div class="mdl-card__title-text title">
-                    The Boeing Company
-                    <div class="mdl-card__title-text subtitle">
-                        IT Intern - Business Systems Data Warehouse & Analytics
-                        <div class="mdl-card__title-text subtitle-blue">
-                            May 2015 - Aug. 2015
-                        </div>
-                    </div>
-                </div>
-                <img src="./img/boeing.png" />
-            </div>
-            <ul class="mdl-card__supporting-text">
-                <li>Worked closely with offshore resources to manage the transition of finance web portal code from Adobe Coldfusion to ASP .NET</li>
-                <li>Provided analysis on existing PL/SQL Queries and database structure</li>
-                <li>Used Tableau analysis software to create data visualizations</li>
-            </ul>
-        </div>
-        
-        
-        <!--- Skills Section --->
-        <div class="section-title"><i class="material-icons">settings</i>Skills</div>        
-        <div class="section-skills mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Embedded C Programming
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                C++ Programming
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                MATLAB
-            </div></div>
-			<div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Simulink
-            </div></div>
-			<div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Qt / Qt QML
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Microcontroller Architectures
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Digital Circuits
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Network/Security Concepts
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Artificial Intelligence
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Linux Systems
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Software Verification
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Git Version Control
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                JIRA Workflow
-            </div></div>
-            <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                LaTeX
-            </div></div>
-        </div>
-        
-        
-        <!--- Honors Section --->
-        <div class="section-title"><i class="material-icons">star</i>Honors</div>
-        <div class="section-honors">
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Missouri S&T Chancellor's Scholarship
-            </div></div>
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Missouri Higher Education Scholarship (Bright Flight)
-            </div></div>
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                James C. Grimm Electrical & Computer Engineering Scholarship
-            </div></div>
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                Dean's List
-            </div></div>
-        </div>
-        
-        
-        <!--- Activities Section --->
-        <div class="section-title"><i class="material-icons">mode_comment</i>Activities</div>
-        <div class="section-activities">
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                <img href="http://alp.mst.edu/music/" class="act-img" src="./img/mstsmall.png">
-                <div><b>Missouri S&T Symphony Orchestra & Wind Symphony</b>, Principal Oboist</div>
-            </div></div>
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                <img href="https://www.kkpsi.org/" class="act-img" src="./img/kky.png">
-                <div><b>Kappa Kappa Psi</b>, Honorary Band Fraternity, Music Committee Chair</div>
-            </div></div>
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                <img href="https://www.tbp.org/" class="act-img" src="./img/tbp.gif">
-                <div><b>Tau Beta Pi</b>, Engineering Honor Society, Member</div>
-            </div></div>
-            <div class="mdl-shadow--6dp"><div class="mdl-card__supporting-text">
-                <img href="http://www.heartlandcamps.org/" class="act-img" src="./img/cross.jpg">
-                <div><b>Heartland Camps</b>, Volunteer Camp Counselor</div>
-            </div></div>
-        
         </div>
     </div>
-</main>
-    
-</div>
-</body>
-</html>
 
+    <!-------------------------------------------------------------------------
+      - About Me Section
+      ------------------------------------------------------------------------>
+    <div class="aboutme shadow">
+        <div class="row">
+            <div class="column_50">
+                <canvas onClick="drawCircuit('aboutme-canvas');" id="aboutme-canvas" width="500px;"
+                    height="500px"></canvas>
+            </div>
+            <div class="column_50">
+                <h3><a id="AboutMe">About Me</a></h3>
+                <p>
+                    I am an <span class="subtle-emphasis">embedded software engineer</span>.
+                    My main area of expertise is working with close-to-hardware <span class="subtle-emphasis">C/C++
+                        code</span>.
+                    I also have experience working with Qt and Matlab/Simulink.
+                    In my work, I welcome the challenges of <span class="subtle-emphasis">solving problems</span> and
+                    <span class="subtle-emphasis">architecting complex systems</span>.
+                </p>
+                <div>
+                    <p>Questions?</p>
+                    <a class="aboutme-button shadow" href="mailto:stewythe1st@gmail.com">Send me an email.</a>
+                    <p>or</p>
+                    <a class="aboutme-button shadow" href="">View a printable resume.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Work experience                                                  
+      ------------------------------------------------------------------------>
+    <h2><a id="Experience"><i class="material-icons">laptop_chromebook</i>Experience</a></h2>
+    <div class="experience-outer shadow">
+        <ul class="flow-points experience">
+            <li>
+                <div class="row">
+                    <div class="column_30 background-image" style="background-image: url(img/vermeer.png);">
+                        <div class="exp_title">Vermeer Corporation</div>
+                        <div class="exp_loc">Pella, IA</div>
+                        <div class="exp_time">May 2018 - Present</div>
+                        <ul class="flow-points">
+                            <li>Embedded Software Engineer II<br>May 2021 - Present</li>
+                            <li>Embedded Software Engineer I<br>May 2019 - May 2021</li>
+                            <li>Embedded Software Engineer Co-Op<br>May 2018 - December 2018</li>
+                        </ul>
+                    </div>
+                    <ul class="column_70">
+                        <li>Develop machine control software for Vermeer's next generation horizontal directional drills
+                            using Simulink and C/C++.</li>
+                        <li>Develop display software using Qt, representing the first Vermeer drill with touchscreen
+                            capabilities.</li>
+                        <li>Architect the software, hardware, and system integration of a common platform for all
+                            next-generation horizontal directional drills.</li>
+                        <li>Design future-proof systems based on the needs of current automation features as well as
+                            desires
+                            for expansion and R&D.</li>
+                        <li>Bring the first horizontal directional drill on the common platform, the <a
+                                href="https://youtu.be/GklTx4LEOnM">Vermeer D550</a> to market.</li>
+                        <li>Troubleshoot software, electrical, hydraulic, and mechanical problems in collaboration with
+                            other engineering teams.</li>
+                        <li>Drive development towards purpose-build in-house software solutions instead of relying on
+                            proprietary programming environments and tools from specific vendors.</li>
+                        <li>Collaborate with hardware vendors to introduce new controller hardware, purpose-built for
+                            Vermeer's needs, and oversee its adoption into the existing programming environment.</li>
+                        <li>Introduce CI/CD workflows using Github Actions; whereas previously all builds & tests were
+                            run
+                            manually.</li>
+                        <li>Work extensively on new low level common hardware abstraction layer C code to be shared
+                            across
+                            segments of the company.</li>
+                        <li>Develop a communication scheme based on SAE J1939 DM14-DM16 messages for automatic
+                            adjustment,
+                            retention, and secure transferral of protected parameters between machine control units.
+                        </li>
+                        <li>Complete an accelerated project to update port legacy software to new hardware when supply
+                            chain
+                            constraints threatened key product lines.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="column_30 background-image" style="background-image: url(img/garmin.png);">
+                        <div class="exp_title">Garmin International</div>
+                        <div class="exp_loc">Olathe, KS</div>
+                        <div class="exp_time">October, 2015 - May, 2016</div>
+                        <ul class="flow-points">
+                            <li>Embedded Software Intern, Aviation</li>
+                        </ul>
+                    </div>
+                    <ul class="column_70">
+                        <li>Work as part of a team to develop kernel layer drivers and interfaces for Garmin's
+                            G1000-G5000
+                            series cockpit display solutions.</li>
+                        <li>Complete a refactor of part of Garmin's module testing environment to allow for enhanced
+                            software verification at the system level.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="column_30 background-image" style="background-image: url(img/boeing.png);">
+                        <div class="exp_title">The Boeing Company</div>
+                        <div class="exp_loc">St. Louis, MO</div>
+                        <div class="exp_time">May 2015 - August 2015</div>
+                        <ul class="flow-points">
+                            <li>IT Intern, Business Systems Data Warehouse & Analytics</li>
+                        </ul>
+                    </div>
+                    <ul class="column" style="flex: 70%">
+                        <li>Gain experience working in a large corporate environment</li>
+                        <li>Assist in updating and transferring finance web portal code</li>
+                    </ul>
+                </div>
+        </ul>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Education Section
+      ------------------------------------------------------------------------>
+    <h2><a id="Education"><i class="material-icons">school</i>Education</a></h2>
+    <div class="shadow">
+        <div class="education">
+            <img src="img/mst.png" />
+            <ul class="flow-points">
+                <li>
+                    <div class="exp_title">Master's of Computer Engineering</div>
+                    <div class="exp_loc">Missouri University of Science & Technology</div>
+                    <div class="exp_loc">Rolla, MO</div>
+                    <div class="exp_time">August 2017 - May 2019</div>
+                    <div class="exp_desc">Emphasis in Embedded Systems</div>
+                </li>
+                <li>
+                    <div class="exp_title">Bachelor's of Computer Engineering</div>
+                    <div class="exp_loc">Missouri University of Science & Technology</div>
+                    <div class="exp_loc">Rolla, MO</div>
+                    <div class="exp_time">August 2013 - May 2017</div>
+                    <div class="exp_desc">Minors in Mathematics & Computer Science</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Skills Section
+      ------------------------------------------------------------------------>
+    <h2><a id="Skills"><i class="material-icons">construction</i>Skills</a></h2>
+    <div class="shadow">
+        <div class="skills">
+            <div class="grid">
+                <div><img src="img/git.png" />
+                    <span>Git</span>
+                </div>
+                <div><img src="img/c.png" />
+                    <span>C / C++</span>
+                </div>
+                <div><img src="img/matlab.png" />
+                    <span>Matlab / Simulink</span>
+                </div>
+                <div><img src="img/qt.png" />
+                    <span>Qt</span>
+                </div>
+                <div><img src="img/linux.png" />
+                    <span>Linux / Embedded Linux</span>
+                </div>
+                <div><img src="img/github-actions.png" />
+                    <span>CI / CD</span>
+                </div>
+                <div><img src="img/checklist.png" />
+                    <span>Test-Driven Development</span>
+                </div>
+                <div><img src="img/documents.png" />
+                    <span>Software Requirements</span>
+                </div>
+                <div><img src="img/iso-7000-network.png" />
+                    <span>SAE J1939<br>CAN bus</span>
+                </div>
+                <div><img src="img/circuitboard.png" />
+                    <span>Hardware Troubleshooting</span>
+                </div>
+                <div><img src="img/gnu-make.png" />
+                    <span>GNU Make / Makefiles</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Personal Life Section
+      ------------------------------------------------------------------------>
+    <h2><a id="PersonalLife"><i class="material-icons">person</i>Personal Life</a></h2>
+    <div class="shadow">
+        <div class="personallife">
+            <div class="personallife-card background-image" style="background-image: url(img/pella.png);">
+                I currently live in the lovely, historically Dutch town of Pella, Iowa.
+            </div>
+            <div class="personallife-card background-image" style="background-image: url(img/thursdays-in-pella.png);">
+                My hobbies include playing the oboe! I enjoy playing with community bands & orchestras whenever I can.
+            </div>
+            <div class="personallife-card background-image" style="background-image: url(img/ada.png);">
+                I live with my 1½ year-old whippet-mix, Ada, who is full of energy!
+            </div>
+            <div class="personallife-card background-image" style="background-image: url(img/home-assistant.png);">
+                In my free time, I like tinkering with home improvement and putting my programming skills to use with
+                home automation.
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Links Section
+      ------------------------------------------------------------------------>
+    <h2><a id="Links">Links</a></h2>
+    <div>
+        <div class="links">
+            <a href="mailto:stewythe1st@gmail.com"><img src="img/email.png" /></a>
+            <a href="https://github.com/stewythe1st"><img src="img/github.png" /></a>
+            <a href="https://www.linkedin.com/in/stuart-miller-153265b1"><img src="img/linkedin.png" /></a>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------
+      - Footer
+      ------------------------------------------------------------------------>
+    <div class="footer">
+        &copy;
+        <script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+        </script>
+        Stuart Miller&emsp;-&emsp;Hosted in Pella, IA.
+        <div class="footer-background"></div>
+    </div>
+
+
+    <!-------------------------------------------------------------------------
+      - Bottom Navigation
+      ------------------------------------------------------------------------>
+    <div class="navigation bottom" onClick="scrollToTop()">
+        <div class="back-to-top"></div>
+    </div>
+
+</body>
+
+<!-----------------------------------------------------------------------------
+  - Scripts
+  ---------------------------------------------------------------------------->
+<script type="text/javascript" src="circuit/circuit.js"></script>
+<script type="text/javascript" src="style/script.js"></script>
+
+</html>

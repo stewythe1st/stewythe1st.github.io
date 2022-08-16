@@ -1,0 +1,676 @@
+/******************************************************************************
+ * Overall Rules
+ *****************************************************************************/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1.50;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    background-color: #dee1e8;
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+* {
+    transition: 1s all ease;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+
+.subtle-emphasis {
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+.column_20 {
+    flex: 20%;
+}
+
+.column_50 {
+    flex: 50%;
+}
+
+.column_70 {
+    flex: 70%;
+}
+
+.column_30 {
+    flex: 30%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin: 0;
+    margin-top: 2rem;
+    line-height: 1.0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+}
+
+h2 i {
+    font-size: 4rem !important;
+    margin-right: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin: 0rem;
+}
+
+.background-image {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shadow {
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%), 0 3px 5px -1px rgb(0 0 0 / 20%);
+    padding: 2rem;
+    background-color: #FFF;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    color: #5c86f9;
+}
+
+.hover-underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover:after {
+    transform: scaleX(1.0);
+    transform-origin: bottom left;
+}
+
+/******************************************************************************
+ * Top
+ *****************************************************************************/
+.section-links {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.section-links a {
+    text-decoration: none;
+}
+
+.section-links div {
+    cursor: pointer;
+    z-index: 10;
+    margin: 1.50rem;
+}
+
+/******************************************************************************
+ * Background
+ *****************************************************************************/
+.background {
+    position: absolute;
+    margin: revert;
+    width: calc(100%);
+    height: 50rem;
+    z-index: -100;
+}
+
+.background-triangle {
+    position: absolute;
+    background-color: #5c86f9;
+    width: calc(300%);
+    height: 45rem;
+    top: -10rem;
+    left: -20rem;
+    overflow: hidden;
+    transform: rotate(-15deg);
+    transform-origin: bottom left;
+    transition: revert;
+    opacity: 0.40;
+}
+
+.background2 {
+    position: absolute;
+    margin: revert;
+    width: calc(100%);
+    height: 50rem;
+    z-index: -100;
+}
+
+.background2-triangle {
+    position: absolute;
+    background-color: #5c86f9;
+    width: calc(300%);
+    height: 45rem;
+    top: -10rem;
+    left: -20rem;
+    overflow: hidden;
+    transform: rotate(-15deg);
+    transform-origin: bottom left;
+    transition: revert;
+    opacity: 0.40;
+}
+
+/******************************************************************************
+ * About Me Section
+ *****************************************************************************/
+.aboutme,
+.aboutme *:not(span) {
+    text-align: center;
+    position: relative;
+}
+
+.aboutme h3 {
+    text-align: center;
+    margin: 0
+}
+
+.aboutme canvas {
+    margin: 0;
+    top: calc(8%);
+    width: calc(42%);
+    cursor: pointer;
+}
+
+.aboutme .column_50>div {
+    width: calc(100%);
+    position: relative;
+}
+
+.aboutme .column_50>div,
+.aboutme .column_50>a {
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.aboutme-button {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0 !important;
+    background-color: #5c86f9;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    width: calc(40%);
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutme-button {
+        width: calc(50%);
+        left: calc(25%)
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .aboutme canvas {
+        width: calc(60%);
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .aboutme .row {
+        display: revert;
+    }
+
+    .aboutme canvas {
+        width: calc(35%);
+        margin: 2rem;
+    }
+
+    .aboutme-button {
+        width: calc(30%);
+    }
+}
+
+/******************************************************************************
+ * Experience Section
+ *****************************************************************************/
+.exp>div {
+    align-items: center;
+}
+
+.exp_title {
+    font-weight: bold;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo>img {
+    left: calc(10%);
+    max-width: calc(80%);
+    position: absolute;
+    transition: 1s all ease;
+    opacity: 0.0;
+}
+
+li.active .logo>img {
+    opacity: 0.1
+}
+
+.exp_loc {}
+
+.exp_time {}
+
+/******************************************************************************
+ * Education Section
+ *****************************************************************************/
+.education {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.education img {
+    max-height: 17rem;
+    margin-right: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .education {
+        flex-direction: column;
+    }
+
+    .education img {
+        margin-right: 0rem;
+        max-height: 14rem;
+    }
+}
+
+/******************************************************************************
+ * Bullet Point styling for Experience and Education Sections
+ *****************************************************************************/
+ul.flow-points {
+    position: relative;
+}
+
+ul.flow-points li :not(ul.flow-points)>li {
+    position: relative;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+ul.flow-points :not(ul.flow-points)>li::marker {
+    content: revert;
+}
+
+ul.flow-points li {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+    opacity: 0.0
+}
+
+ul.flow-points li.active {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+    transition: 1s all ease;
+    opacity: 1.0
+}
+
+ul.flow-points li::marker {
+    content: "";
+}
+
+ul.flow-points>li::before {
+    content: "";
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: -2rem;
+    top: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    z-index: 3;
+    border: 0.18rem solid rgb(0, 0, 0);
+    transition: 1s all ease;
+    transform: scale(0.4);
+}
+
+ul.flow-points>li.active::before {
+    transform: scale(1.0);
+}
+
+ul.flow-points>li:after {
+    width: 0.2rem;
+    height: calc(100% - 0.4rem);
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 1.45rem;
+    left: -1.45rem;
+    background: rgb(0, 0, 0);
+    transition: 1s all ease;
+    transform: scaleY(0.0);
+    transform-origin: top;
+}
+
+ul.flow-points>li.active:after {
+    transform: scaleY(1.0);
+}
+
+ul.flow-points ul.flow-points>li:last-of-type:after {
+    height: 0.2rem;
+    width: 2.65rem;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 1.5rem;
+    left: -3.9rem;
+    background: rgb(0, 0, 0);
+    transition: 1s all ease;
+    transform: scaleX(0.0);
+    transform-origin: right;
+}
+
+ul.flow-points ul.flow-points>li.active:last-of-type:after {
+    transform: scaleX(1.0);
+}
+
+ul.flow-points li ul.flow-points li::before {
+    background: rgb(255, 255, 255);
+}
+
+/******************************************************************************
+ * Skills Section
+ *****************************************************************************/
+.skills .grid img {
+    max-width: 4rem;
+    max-height: 4rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.75rem;
+}
+
+.skills .grid div {
+    display: inline-grid;
+    position: relative;
+    padding: 1rem;
+    padding-left: 6rem;
+    height: 5.5rem;
+    margin: 0.5rem;
+    width: 9rem;
+    background-color: rgb(206, 206, 206);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+
+.skills .grid div:hover {
+    margin: 0.2rem;
+    width: 9.4rem;
+    height: 5.9rem;
+}
+
+.skills .grid div span {
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .grid {
+    grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (min-width: 1450px) {
+    .skills .grid {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1668px) {
+    .skills .grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .skills .grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+
+.skills {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .grid {
+    display: grid;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/******************************************************************************
+ * Personal Life Section
+ *****************************************************************************/
+.personallife {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 1390px) {
+    .personallife {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.personallife-card {
+    margin: 1rem;
+    border-radius: 1rem;
+    height: 15rem;
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -0.5px -0.5px 0 #FFF, 0.5px -0.5px 0 #FFF, -0.5px 0.5px 0 #FFF, 0.5px 0.5px 0 #FFF;
+}
+
+@media screen and (max-width: 600px) {
+    .personallife-card {
+        font-size: 1.10rem;
+        padding: 1.0rem;
+        margin: 0.75rem;
+    }
+}
+
+/******************************************************************************
+ * Links Section
+ *****************************************************************************/
+.links img {
+    width: 5rem;
+    height: 5rem;
+    margin: 1.5rem;
+}
+
+.links img:hover {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+}
+
+.links {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************************************************************************
+ * Footer
+ *****************************************************************************/
+.footer {
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.footer-background {
+    background-color: #5c86f9;
+    opacity: 0.40;
+    position: absolute;
+    width: calc(100% + 40rem);
+    height: 7rem;
+    left: -20rem;
+    bottom: -2rem;
+}
+
+/******************************************************************************
+ * Navigation Menus
+ *****************************************************************************/
+.menu {
+    position: fixed
+}
+
+.navigation {
+    cursor: pointer;
+    background-color: #5c86f9;
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    right: 4rem;
+    border-radius: 2rem;
+    transform: scaleX(0.0) scaleY(0.0) rotate(-120deg);
+    transition: 0.750s ease all;
+}
+
+.navigation.top {
+    top: 2rem;
+}
+
+.navigation.bottom {
+    bottom: 2rem;
+}
+
+.navigation .hamburger,
+.navigation .hamburger:before,
+.navigation .hamburger:after {
+    background-color: white;
+    position: relative;
+    top: 1.86rem;
+    left: 0.875rem;
+    width: 2.25rem;
+    height: 0.25rem;
+    border-radius: 0.20rem;
+}
+
+.navigation.active {
+    transform: scaleX(1.0) scaleY(1.0) rotate(0deg);
+}
+
+.navigation .hamburger:before,
+.navigation .hamburger:after {
+    display: inline-block;
+    content: "";
+    left: 0rem;
+}
+
+.navigation .hamburger:before {
+    top: -0.72rem;
+}
+
+.navigation .hamburger:after {
+    top: 0.50rem;
+}
+
+.navigation .back-to-top,
+.navigation .back-to-top:before,
+.navigation .back-to-top:after {
+    background-color: white;
+    position: relative;
+    top: 1.0rem;
+    left: 1.875rem;
+    height: 2.00rem;
+    width: 0.25rem;
+    border-radius: 0.20rem;
+}
+
+.navigation .back-to-top:before,
+.navigation .back-to-top:after {
+    transform-origin: 0 0;
+    height: 1.0rem;
+    display: inline-block;
+    content: "";
+}
+
+.navigation .back-to-top:before {
+    transform: rotate(55deg);
+    top: 0rem;
+    left: 0rem;
+}
+
+.navigation .back-to-top:after {
+    transform: rotate(-55deg);
+    top: -0.75rem;
+    left: 0.125rem;
+}
