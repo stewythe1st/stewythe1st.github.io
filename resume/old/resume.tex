@@ -1,0 +1,149 @@
+\documentclass[resmargin]{res}
+	\linespread{1.15}
+	\newsectionwidth{1.26in}
+	\sectionskip=4.25ex
+	\addtolength{\textwidth}{0.5in}
+	\addtolength{\textheight}{2in}
+	\addtolength{\oddsidemargin}{-0.25in}
+
+\usepackage{enumitem}\setlist{nosep}
+%\usepackage[utf8]{inputenc}
+\usepackage{helvet}\renewcommand{\familydefault}{\sfdefault}
+\usepackage{multicol}\setlength\multicolsep{0.0in}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\begin{document}
+
+\name{\textbf{\LARGE{Stuart Miller}}\\[6pt]}
+
+\address{Pella, IA\\ \href{http://www.linkedin.com/in/stuartmillerdev/}{linkedin.com/in/stuartmillerdev}}
+\address{816-785-4105\\stewythe1st@gmail.com}
+
+\begin{resume}
+
+\hspace{-1.26in}\noindent\rule{7.0in}{0.4pt}
+
+\section{Objective}
+To obtain an internship or co-op for 2018 in the field of embedded software engineering.
+
+\section{Experience}
+Vermeer Corporation \hfill Pella, IA\\
+{\bf Embedded Software Engineer II} \hfill May 2021 - Present\\
+{\bf Embedded Software Engineer I} \hfill May 2019 - May 2021\\
+{\bf Embedded Software Engineer Co-Op} \hfill May 2018 - Dec. 2018
+\begin{itemize}
+	\item Develop machine control software for Vermeer's next generation horizontal directional drills using Simulink and C/C++.
+	\item Develop display software using Qt, representing the first Vermeer drill with touchscreen capabilities.
+	\item Architect the software, hardware, and system integration of a common platform for all next-generation horizontal directional drills.
+	\item Design future-proof systems based on the needs of current automation features as well as desires for expansion and R\&D.
+	\item Bring the first horizontal directional drill on the common platform, the Vermeer D550 to market.
+	\item Troubleshoot software, electrical, hydraulic, and mechanical problems in collaboration with other engineering teams.
+	\item Drive development towards purpose-build in-house software solutions instead of relying on proprietary programming environments and tools from specific vendors.
+	\item Collaborate with hardware vendors to introduce new controller hardware, purpose-built for Vermeer's needs, and oversee its adoption into the existing programming environment.
+	\item Introduce CI/CD workflows using Github Actions; whereas previously all builds \& tests were run manually.
+	\item Work extensively on new low level common hardware abstraction layer C code to be shared across segments of the company.
+	\item Develop a communication scheme based on SAE J1939 DM14-DM16 messages for automatic adjustment, retention, and secure transferral of protected parameters between machine control units.
+	\item Complete an accelerated project to update port legacy software to new hardware when supply chain constraints threatened key product lines.
+
+\end{itemize}
+Garmin International \hfill Olathe, KS\\
+{\bf Software Engineering Intern, Aviation} \hfill Oct. ‘15 - Aug. ‘16
+\begin{itemize}
+	\item Developed and tested software used on aviation displays and user interfaces
+	\item Worked closely within the constraints of hardware to write effective embedded C code
+	\item Completed a refactor of part of Garmin's module testing environment to allow for enhanced software verification at the system level
+	\item Participated in software development lifecycle activities such as code reviews, software verification, and code coverage analysis
+
+\end{itemize}
+
+\newpage
+
+The Boeing Company \hfill St. Louis, MO\\
+{\bf IT Intern, Business Systems Data Warehouse \& Analytics} \hfill May ’15 - Aug. ‘15
+\begin{itemize}
+	\item Worked closely with offshore resources to manage the transition of finance web portal code from Adobe Coldfusion to ASP .NET
+	\item Provided analysis on existing PL/SQL Queries and database structure
+	\item Used Tableau analysis software to create data visualizations and dashboards
+\end{itemize}
+
+\iffalse
+Missouri S\&T IT Department \hfill Rolla, MO\\
+{\bf IT Help Desk Senior Student Technician} \hfill Oct. ’14 - Present
+\begin{itemize}
+	\item Investigate computer related problems, determine the cause, and implement a solution or coordinate with the appropriate department to resolve the issue
+	\item Serve as a point of escalation for demanding issues
+	\item Oversee training of new employees and implementation of new policies
+	\item Operate and manage the 3D printers available to faculty and students
+	\item Repair laptops as a Dell-certified technician
+\end{itemize}
+\fi
+
+\section{Education}
+Missouri University of Science and Technology (Missouri S\&T)\hfill May 2019 \\
+{\bf M.S. Computer Engineering}\\%\hfill	{\bf GPA: 3.8/4.0} \\
+{\bf \it Emphasis in embedded systems}
+
+Missouri University of Science and Technology (Missouri S\&T)\hfill May 2017 \\
+{\bf B.S. Computer Engineering}\\%\hfill	{\bf GPA: 3.8/4.0} \\
+{\bf \it Minors in Computer Science \& Mathematics}\\
+
+\section{Skills}
+\begin{multicols}{3}
+	C / C++\\
+	Linux / Embedded Linux\\
+	SAE J1939 \& CAN bus\\
+	Test-Driven Development\\
+	\\
+	Qt\\
+	Git Version Control\\
+	CI / CD\\
+	Hardware Troubleshooting\\
+	\\
+	GNU Make / Makefiles\\
+	Matlab / Simulink\\
+	Jira Project Management\\
+	Software Requirements\\
+\end{multicols}
+
+
+\iffalse
+\section{Projects}
+Senior Design Project, Missouri S\&T\hfill Spring 2017\\
+{\bf Digital Music Transcriber}
+\begin{itemize}
+	\item Designed an algorithm to convert audio input from musical instruments to written music using a Texas Instruments C2000-series processor
+	\item Implemented code to interface with open-source display and audio-processing libraries
+	\item Worked as part of a development team, participating in weekly standups and collaboration meetings
+	\item Acted as team leader to help manage schedules and coordinate documentation
+\end{itemize}
+
+Missouri S\&T Artificial Intelligence Tournament\hfill Fall 2016\\
+{\bf Third Place Winner}
+\begin{itemize}
+	\item Designed a C++ program capable of playing competitive chess
+	\item Utilized AI state-space search techniques such as minimax, alpha-beta pruning, and quiescence.
+	\item Defeated both human and other artificial intelligence opponents to win third place
+\end{itemize}
+\fi
+
+\iffalse
+\section{Honors \& Activities}
+Missouri S\&T Chancellor's Scholarship\\
+Missouri Higher Education Scholarship (Bright Flight)\\
+James C. Grimm Electrical \& Computer Engineering Scholarship\\
+Tau Beta Pi - National Engineering Honor Society\\
+Kappa Kappa Psi - National Honorary Band Fraternity\\
+Principal Oboist - Missouri S\&T Symphonic Orchestra and Wind Symphony
+\fi
+
+\end{resume}
+
+\end{document}

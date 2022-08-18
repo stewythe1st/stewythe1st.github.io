@@ -1,0 +1,4 @@
+resume/**/*.log
+resume/**/*.gz
+**.tmp
+~$*
