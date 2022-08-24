@@ -529,10 +529,16 @@ ul.flow-points li ul.flow-points li::before {
 .skill>div {
     width: calc(100% - 2rem);
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     left: 0;
     top: 0;
     word-break: break-word;
+}
+
+@media screen and (max-width: 1000px) {
+    .skill>div.long-text {
+        font-size: 0.68rem !important;
+    }
 }
 
 .skill {
