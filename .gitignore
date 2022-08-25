@@ -1,4 +1,5 @@
 resume/**/*.log
 resume/**/*.gz
+resume/coverletter**
 **.tmp
 ~$*

@@ -412,7 +412,6 @@ ul.flow-points li :not(ul.flow-points)>li {
     position: relative;
     padding-top: 0rem;
     padding-bottom: 0rem;
-    list-style: "⮞ ";
 }
 
 ul.flow-points :not(ul.flow-points)>li::marker {
