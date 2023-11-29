@@ -3,3 +3,4 @@ resume/**/*.gz
 resume/coverletter**
 **.tmp
 ~$*
+**.save
