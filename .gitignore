@@ -3,4 +3,5 @@ resume/**/*.gz
 resume/coverletter**
 **.tmp
 ~$*
+.~lock*
 **.save
